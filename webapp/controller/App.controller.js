@@ -17,6 +17,10 @@ sap.ui.define([
 			this.getView().setModel(new JSONModel({
 				isMobile: Device.browser.mobile
 			}), "view");
+
+			window.ab = {
+				test: "do not use"
+			}
 		},
 
 		/**
