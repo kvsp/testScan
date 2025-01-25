@@ -18,9 +18,7 @@ sap.ui.define([
 				isMobile: Device.browser.mobile
 			}), "view");
 
-			window.ab = {
-				test: "do not use"
-			}
+			var abcdef = "w343543";
 		},
 
 		/**
