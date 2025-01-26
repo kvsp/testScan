@@ -36,6 +36,13 @@ sap.ui.define([
 
 			// 2 - Insecure: Using eval() to evaluate user-provided expression
 			const result = eval(sInput);
+
+			// 3 - Variables should be declared explicitly
+			ab = '235';
+
+			//4 - Web SQL databases 
+			var db = window.openDatabase("myDb", "1.0", "Personal secrets stored here", 2*1024*1024);  // Noncompliant
+
 		},
 
 		/**
