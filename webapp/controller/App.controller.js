@@ -33,6 +33,9 @@ sap.ui.define([
 			let sInput = document.getElementById(oInp.getId()).value;
 			let out = document.getElementById(oOutput.getId());
 			out.innerHTML = '<p>' + sInput + '</p>';
+
+			// 2 - Insecure: Using eval() to evaluate user-provided expression
+			const result = eval(sInput);
 		},
 
 		/**
