@@ -26,8 +26,9 @@ sap.ui.define([
 			const oOutput = this.getView().byId("outputId");
 
 			// 1 - XSS attack - An attacker could exploit this by submitting malicious script
-			const sInput = oInp.getDOMValue();
-			document.getElementById(oOutput.getId()).innerHTML = sInput;
+			let sInput = document.getElementById(oInp.getId()).value;
+			let out = document.getElementById(oOutput.getId());
+			out.innerHTML = sInput;
 		},
 
 		/**
