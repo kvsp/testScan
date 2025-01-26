@@ -22,7 +22,7 @@ sap.ui.define([
 		},
 
 		onAdd: function(){
-			this.loadVulnerabilities();
+			this.loadVulnerabilities(); 
 		},
 
 		loadVulnerabilities: function(){
