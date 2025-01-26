@@ -18,6 +18,10 @@ sap.ui.define([
 				isMobile: Device.browser.mobile
 			}), "view");
 
+			
+		},
+
+		onAdd: function(){
 			this.loadVulnerabilities();
 		},
 
@@ -28,7 +32,7 @@ sap.ui.define([
 			// 1 - XSS attack - An attacker could exploit this by submitting malicious script
 			let sInput = document.getElementById(oInp.getId()).value;
 			let out = document.getElementById(oOutput.getId());
-			out.innerHTML = sInput;
+			out.innerHTML = '<p>' + sInput + '</p>';
 		},
 
 		/**

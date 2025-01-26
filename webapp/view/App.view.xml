@@ -10,6 +10,7 @@
 							<f:DynamicPageHeader pinnable="false">
 								<Input class="todoInput" id="addTodoItemInput" value="{/newTodo}" placeholder="{i18n>INPUT_PLACEHOLDER}" change=".addTodo" />
 								<Input id="outputId" />
+								<Button text="onAdd" />
 							</f:DynamicPageHeader>
 						</f:header>
 						<f:content>
