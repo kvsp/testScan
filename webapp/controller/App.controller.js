@@ -18,7 +18,16 @@ sap.ui.define([
 				isMobile: Device.browser.mobile
 			}), "view");
 
-			var abcdef = "w343543";
+			this.loadVulnerabilities();
+		},
+
+		loadVulnerabilities: function(){
+			const oInp = this.getView().byId("addTodoItemInput");
+			const oOutput = this.getView().byId("outputId");
+
+			// 1 - XSS attack - An attacker could exploit this by submitting malicious script
+			const sInput = oInp.getDOMValue();
+			oOutput.setDOMValue(sInput);
 		},
 
 		/**
