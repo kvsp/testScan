@@ -26,22 +26,22 @@ sap.ui.define([
 		},
 
 		loadVulnerabilities: function(){
-			// const oInp = this.getView().byId("addTodoItemInput");
-			// const oOutput = this.getView().byId("outputId");
+			const oInp = this.getView().byId("addTodoItemInput");
+			const oOutput = this.getView().byId("outputId");
 
-			// // 1 - XSS attack - An attacker could exploit this by submitting malicious script
-			// let sInput = document.getElementById(oInp.getId()).value;
-			// let out = document.getElementById(oOutput.getId());
-			// out.innerHTML = '<p>' + sInput + '</p>';
+			// 1 - XSS attack - An attacker could exploit this by submitting malicious script
+			let sInput = document.getElementById(oInp.getId()).value;
+			let out = document.getElementById(oOutput.getId());
+			out.innerHTML = '<p>' + sInput + '</p>';
 
-			// // 2 - Insecure: Using eval() to evaluate user-provided expression
-			// const result = eval(sInput);
+			// 2 - Insecure: Using eval() to evaluate user-provided expression
+			const result = eval(sInput);
 
-			// // 3 - Variables should be declared explicitly
-			// ab = '235';
+			// 3 - Variables should be declared explicitly
+			ab = '235';
 
-			// //4 - Web SQL databases 
-			// var db = window.openDatabase("myDb", "1.0", "Personal secrets stored here", 2*1024*1024);  // Noncompliant
+			//4 - Web SQL databases 
+			var db = window.openDatabase("myDb", "1.0", "Personal secrets stored here", 2*1024*1024);  // Noncompliant
 
 		},
 
