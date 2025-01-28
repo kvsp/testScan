@@ -17,7 +17,7 @@ sap.ui.define([
 			this.getView().setModel(new JSONModel({
 				isMobile: Device.browser.mobile
 			}), "view");
-// new change - run
+// new change - run - 2
 			
 		},
 
